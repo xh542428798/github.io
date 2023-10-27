@@ -13,69 +13,69 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="这是官方的Citavi3插件开发指南，很短，在这里参考官方插件开发指南，重新写了citavi 6.8插件开发指南，并且在citavi 6.8中进行实践并修正错误，里面部分截图说明沿用官方的citavi3的，请灵活修改。 目录 Citavi API 的结构以及与 Citavi 用户界面的交互 设置开发环境 创建不需要用户调用的附加组件（例如用于标题导航的过滤器） 使用插件扩展 Citavi 菜单和工">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/9578ebbfb484f6144f1159c5280abf0e_MD5.jpg">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/d6266a317ed3a09eac1af14c39e00139_MD5.jpg">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/286bfdb24c5a5b8a3a11825374284635_MD5.jpg">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/3d3e945a57f6496a3a00a2558b9e1d16_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/4729ed20b4ee34de8a337921e9304faf_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/340d0a0a9b6d8bf06edfbf580e2fabb8_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/d5b386fc05f67eaf77cc1a658124d7f5_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/19a79bf6d25d3bc441d4f4ab9fc49b83_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/52f30b11e7c214b8f43c3866315f00b7_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/d38cd39444fa1299fb26f14bb5cb392a_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/1deaccc8c474d14c3edea73b828cc3c9_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/8ab4595fb24114c948f4d593534c58d1_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/a58baf7a75c68958359ed31180ee64fa_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/02a61b4bf276da5e2df4a230b61e00dc_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/a386c9791da6701740299e452275bbd6_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/51830b7477e87ef9c04c254eb6f943a8_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/8e49eb268e6160ebf176e4ff139311cc_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/7cd2a9e5ab679f433aa914779794a7d4_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/ed21e4bd09f69755d0f602e9f79e0f06_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/14b67ee822d31101ec68251cef1aa448_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/f128ca7592bd49413b9a42ea387323e4_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/a5c531377145bcf4b8f864f8d354b797_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/631203feaf07c42d28882029476d28a6_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/989440553d0c9c36f1aa33a777f84e3b_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/6582edfd68f8328534c63ba5d8aed6fb_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/aca7f9d2cc06d3e7e92cc0c880f8b6e5_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/d8419355b1f9972c0c9985437c809cfa_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/3047a3d805f4eda98587a769e2b74970_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/cb11859a537e7c46b5d86aeb3316e97d_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/21ace99eb7d5b44ed57a00e2cd1ae3fa_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/772795baef9794a37f32f8cb4a01ca42_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/233a89cddf4c4abc21b0f3b0dfc54dac_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/a935fe84d88f0352ae1157f6e375221d_MD5.jpeg">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/502f8530ce1ff59ecc006644f79a0930_MD5.jpeg">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/482a793f65a94597ab5046393a2a7bd1_MD5.jpeg">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/6c4c5c1f955bad54d7119400cd045e6a_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/3ed92128c0cb8f5b73c1f95d70cb84f5_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/aa7222bd6f37206802c079e83860044b_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/911db216f0c5c5111ad6f67d6ce6ac50_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/e7b5424aacf143e44ecfea5cdf236cd4_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/58095868f6660b21eaeaffc2fb810494_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/21c7a1dfbe6a348ac9a18d28c0bce1e0_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/2868a16779fc701eb38b69bdbe4dfa39_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/50a5bdb33c779f48b7a9d38be02d878d_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/20cfa30f4b5efe3a3b07e8eb98665398_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/f51aa163303429352f83a4c4c4020e11_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/5096075de00b48d42fabcb2248ddb82c_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/1d4afd1d65ef541a3a8b8ee107e70540_MD5.jpeg">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/8a499e7f01ea1f9c0dc1ee0f28e386cd_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/830af4bea8eb99a43ce2fced2aaa62ad_MD5.jpeg">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/75dde7d59985476cf1f79e7cfc472c58_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/0c3a72a0573fa18a9356f0234deb162f_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/a206235b759e901beb81d9f324fd857c_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/5096075de00b48d42fabcb2248ddb82c_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/734efc56d6d1589b90426b0ef476ddfc_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/162f2f635f129c4da9119f76acdef9b9_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/b895da3280851d09289a31525c6ce2ce_MD5.png">
-<meta property="og:image" content="https://xh542428798.github.io/vx_images/f3c85b3492e7305a0f5396543fd6ec5d_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/9578ebbfb484f6144f1159c5280abf0e_MD5.jpg">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/d6266a317ed3a09eac1af14c39e00139_MD5.jpg">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/286bfdb24c5a5b8a3a11825374284635_MD5.jpg">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/3d3e945a57f6496a3a00a2558b9e1d16_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/4729ed20b4ee34de8a337921e9304faf_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/340d0a0a9b6d8bf06edfbf580e2fabb8_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/d5b386fc05f67eaf77cc1a658124d7f5_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/19a79bf6d25d3bc441d4f4ab9fc49b83_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/52f30b11e7c214b8f43c3866315f00b7_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/d38cd39444fa1299fb26f14bb5cb392a_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/1deaccc8c474d14c3edea73b828cc3c9_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/8ab4595fb24114c948f4d593534c58d1_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/a58baf7a75c68958359ed31180ee64fa_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/02a61b4bf276da5e2df4a230b61e00dc_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/a386c9791da6701740299e452275bbd6_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/51830b7477e87ef9c04c254eb6f943a8_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/8e49eb268e6160ebf176e4ff139311cc_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/7cd2a9e5ab679f433aa914779794a7d4_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/ed21e4bd09f69755d0f602e9f79e0f06_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/14b67ee822d31101ec68251cef1aa448_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/f128ca7592bd49413b9a42ea387323e4_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/a5c531377145bcf4b8f864f8d354b797_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/631203feaf07c42d28882029476d28a6_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/989440553d0c9c36f1aa33a777f84e3b_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/6582edfd68f8328534c63ba5d8aed6fb_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/aca7f9d2cc06d3e7e92cc0c880f8b6e5_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/d8419355b1f9972c0c9985437c809cfa_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/3047a3d805f4eda98587a769e2b74970_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/cb11859a537e7c46b5d86aeb3316e97d_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/21ace99eb7d5b44ed57a00e2cd1ae3fa_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/772795baef9794a37f32f8cb4a01ca42_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/233a89cddf4c4abc21b0f3b0dfc54dac_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/a935fe84d88f0352ae1157f6e375221d_MD5.jpeg">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/502f8530ce1ff59ecc006644f79a0930_MD5.jpeg">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/482a793f65a94597ab5046393a2a7bd1_MD5.jpeg">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/6c4c5c1f955bad54d7119400cd045e6a_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/3ed92128c0cb8f5b73c1f95d70cb84f5_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/aa7222bd6f37206802c079e83860044b_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/911db216f0c5c5111ad6f67d6ce6ac50_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/e7b5424aacf143e44ecfea5cdf236cd4_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/58095868f6660b21eaeaffc2fb810494_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/21c7a1dfbe6a348ac9a18d28c0bce1e0_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/2868a16779fc701eb38b69bdbe4dfa39_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/50a5bdb33c779f48b7a9d38be02d878d_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/20cfa30f4b5efe3a3b07e8eb98665398_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/f51aa163303429352f83a4c4c4020e11_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/5096075de00b48d42fabcb2248ddb82c_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/1d4afd1d65ef541a3a8b8ee107e70540_MD5.jpeg">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/8a499e7f01ea1f9c0dc1ee0f28e386cd_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/830af4bea8eb99a43ce2fced2aaa62ad_MD5.jpeg">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/75dde7d59985476cf1f79e7cfc472c58_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/0c3a72a0573fa18a9356f0234deb162f_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/a206235b759e901beb81d9f324fd857c_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/5096075de00b48d42fabcb2248ddb82c_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/734efc56d6d1589b90426b0ef476ddfc_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/162f2f635f129c4da9119f76acdef9b9_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/b895da3280851d09289a31525c6ce2ce_MD5.png">
+<meta property="og:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/f3c85b3492e7305a0f5396543fd6ec5d_MD5.png">
 <meta property="article:published_time" content="2023-10-27T13:54:36.000Z">
-<meta property="article:modified_time" content="2023-10-27T13:58:34.903Z">
+<meta property="article:modified_time" content="2023-10-27T14:01:52.720Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://xh542428798.github.io/vx_images/9578ebbfb484f6144f1159c5280abf0e_MD5.jpg">
+<meta name="twitter:image" content="https://xh542428798.github.io/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/9578ebbfb484f6144f1159c5280abf0e_MD5.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -165,11 +165,11 @@
 <li>覆盖内置 Citavi 命令</li>
 <li>提示与技巧</li>
 </ul>
-<h1 id="Citavi软件框架"><a href="#Citavi软件框架" class="headerlink" title="Citavi软件框架"></a>Citavi软件框架</h1><h2 id="Architecture"><a href="#Architecture" class="headerlink" title="Architecture"></a>Architecture</h2><p><img src="/vx_images/9578ebbfb484f6144f1159c5280abf0e_MD5.jpg"></p>
-<h2 id="Project-的类层次结构"><a href="#Project-的类层次结构" class="headerlink" title="Project 的类层次结构"></a><code>Project</code> 的类层次结构</h2><p><img src="/vx_images/d6266a317ed3a09eac1af14c39e00139_MD5.jpg"></p>
+<h1 id="Citavi软件框架"><a href="#Citavi软件框架" class="headerlink" title="Citavi软件框架"></a>Citavi软件框架</h1><h2 id="Architecture"><a href="#Architecture" class="headerlink" title="Architecture"></a>Architecture</h2><p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/9578ebbfb484f6144f1159c5280abf0e_MD5.jpg"></p>
+<h2 id="Project-的类层次结构"><a href="#Project-的类层次结构" class="headerlink" title="Project 的类层次结构"></a><code>Project</code> 的类层次结构</h2><p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/d6266a317ed3a09eac1af14c39e00139_MD5.jpg"></p>
 <h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">ProjectShell projectShell = Program.ActiveProjectShell;</span><br><span class="line">Project project = projectShell.Project;</span><br><span class="line"></span><br><span class="line"><span class="built_in">int</span> referencesCount = project.References.Count;</span><br><span class="line"><span class="built_in">int</span> referenceKeywordsCount = project.References[<span class="number">32</span>].Keywords.Count;</span><br><span class="line"></span><br><span class="line">MessageBox.Show(referencesCount.ToString());</span><br><span class="line">MessageBox.Show(referenceKeywordsCount.ToString());</span><br></pre></td></tr></table></figure>
 
-<h2 id="MainForm-和-ActiveReference"><a href="#MainForm-和-ActiveReference" class="headerlink" title="MainForm 和 ActiveReference"></a><code>MainForm</code> 和 <code>ActiveReference</code></h2><p><img src="/vx_images/286bfdb24c5a5b8a3a11825374284635_MD5.jpg"></p>
+<h2 id="MainForm-和-ActiveReference"><a href="#MainForm-和-ActiveReference" class="headerlink" title="MainForm 和 ActiveReference"></a><code>MainForm</code> 和 <code>ActiveReference</code></h2><p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/286bfdb24c5a5b8a3a11825374284635_MD5.jpg"></p>
 <h3 id="示例1"><a href="#示例1" class="headerlink" title="示例1"></a>示例1</h3><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">ProjectShell projectShell = Program.ActiveProjectShell;</span><br><span class="line">MainForm mainForm = projectShell.MainForms[<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line">Reference reference = mainForm.ActiveReference;</span><br><span class="line"><span class="built_in">string</span> title = reference.Title;</span><br><span class="line"></span><br><span class="line">MessageBox.Show(title);</span><br></pre></td></tr></table></figure>
 
 <h3 id="示例2"><a href="#示例2" class="headerlink" title="示例2"></a>示例2</h3><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ProjectShell projectShell = Program.ActiveProjectShell;</span><br><span class="line">Reference reference = projectShell.Project.References[<span class="number">34</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">// PrimaryMainForm 是最近一个由应用程序激活的主窗体</span></span><br><span class="line">projectShell.PrimaryMainForm.ActiveReference = reference;</span><br></pre></td></tr></table></figure>
@@ -208,41 +208,41 @@
 <li>新建一个文件夹。</li>
 <li>将文件夹命名为（例如）Citavi 3 Add-On Development。</li>
 </ol>
-<p><img src="/vx_images/3d3e945a57f6496a3a00a2558b9e1d16_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/3d3e945a57f6496a3a00a2558b9e1d16_MD5.png"></p>
 <h2 id="复制程序文件"><a href="#复制程序文件" class="headerlink" title="复制程序文件"></a>复制程序文件</h2><ol>
 <li>转到 Program Files\Citavi 3 文件夹</li>
 <li>按 <code>Ctrl + A</code> 或选择所有文件夹。</li>
 <li>将所有选定的文件夹复制到剪贴板。</li>
 </ol>
-<p><img src="/vx_images/4729ed20b4ee34de8a337921e9304faf_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/4729ed20b4ee34de8a337921e9304faf_MD5.png"></p>
 <h2 id="插入程序文件"><a href="#插入程序文件" class="headerlink" title="插入程序文件"></a>插入程序文件</h2><ol>
 <li>转到之前创建的 Citavi 3 Add-On Development 文件夹</li>
 <li>粘贴从剪贴板复制的文件夹。</li>
 </ol>
-<p><img src="/vx_images/340d0a0a9b6d8bf06edfbf580e2fabb8_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/340d0a0a9b6d8bf06edfbf580e2fabb8_MD5.png"></p>
 <h2 id="创建附加组件文件夹"><a href="#创建附加组件文件夹" class="headerlink" title="创建附加组件文件夹"></a>创建附加组件文件夹</h2><ol>
 <li>在 Citavi 3 Add-On Development 文件夹中创建一个新文件夹。</li>
 <li>将此文件夹命名为 AddOns。</li>
 </ol>
-<p><img src="/vx_images/d5b386fc05f67eaf77cc1a658124d7f5_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/d5b386fc05f67eaf77cc1a658124d7f5_MD5.png"></p>
 <h2 id="创建新项目，每个新项目都需要操作"><a href="#创建新项目，每个新项目都需要操作" class="headerlink" title="创建新项目，每个新项目都需要操作"></a>创建新项目，每个新项目都需要操作</h2><ol>
 <li>启动 Visual Studio。</li>
 <li>单击“新建项目”。</li>
 </ol>
-<p><img src="/vx_images/19a79bf6d25d3bc441d4f4ab9fc49b83_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/19a79bf6d25d3bc441d4f4ab9fc49b83_MD5.png"></p>
 <h3 id="选择项目类型和名称"><a href="#选择项目类型和名称" class="headerlink" title="选择项目类型和名称"></a>选择项目类型和名称</h3><ol>
 <li>从下拉列表中选择 .NET Framework 4.6.1 (Citavi 6的框架是4.6.1)</li>
 <li>选择类库（<code>Class library</code>）。</li>
 <li>为附加组件输入一个有意义的名称，在我们的示例 ShortTitleFilterDemoAddOn 中。</li>
 <li>单击“确定”。</li>
 </ol>
-<p><img src="/vx_images/52f30b11e7c214b8f43c3866315f00b7_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/52f30b11e7c214b8f43c3866315f00b7_MD5.png"></p>
 <h3 id="添加引用"><a href="#添加引用" class="headerlink" title="添加引用"></a>添加引用</h3><ol>
 <li>在解决方案资源管理器中，右键单击“引用”文件夹并选择“添加引用…”</li>
 </ol>
-<p><img src="/vx_images/d38cd39444fa1299fb26f14bb5cb392a_MD5.png"></p>
-<h3 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h3><p>单击“浏览”。<br><img src="/vx_images/1deaccc8c474d14c3edea73b828cc3c9_MD5.png"></p>
-<h3 id="取消过滤，选择全部文件"><a href="#取消过滤，选择全部文件" class="headerlink" title="取消过滤，选择全部文件"></a>取消过滤，选择全部文件</h3><p>将文件选择对话框的过滤器设置为 All files。<br><img src="/vx_images/8ab4595fb24114c948f4d593534c58d1_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/d38cd39444fa1299fb26f14bb5cb392a_MD5.png"></p>
+<h3 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h3><p>单击“浏览”。<br><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/1deaccc8c474d14c3edea73b828cc3c9_MD5.png"></p>
+<h3 id="取消过滤，选择全部文件"><a href="#取消过滤，选择全部文件" class="headerlink" title="取消过滤，选择全部文件"></a>取消过滤，选择全部文件</h3><p>将文件选择对话框的过滤器设置为 All files。<br><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/8ab4595fb24114c948f4d593534c58d1_MD5.png"></p>
 <h3 id="选择-Citavi-exe"><a href="#选择-Citavi-exe" class="headerlink" title="选择 Citavi.exe"></a>选择 Citavi.exe</h3><ol>
 <li>转到您之前创建的 Citavi 3 Add-On Development 文件夹。</li>
 <li>选择 Citavi.exe 文件。 （先不要单击“打开”。）<blockquote>
@@ -250,36 +250,36 @@
 </blockquote>
 </li>
 </ol>
-<p><img src="/vx_images/a58baf7a75c68958359ed31180ee64fa_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/a58baf7a75c68958359ed31180ee64fa_MD5.png"></p>
 <h3 id="按住-Ctrl-键的同时选择所有-SwissAcademic开头的dll-文件"><a href="#按住-Ctrl-键的同时选择所有-SwissAcademic开头的dll-文件" class="headerlink" title="按住 Ctrl 键的同时选择所有 SwissAcademic开头的dll 文件"></a>按住 Ctrl 键的同时选择所有 SwissAcademic开头的dll 文件</h3><ol>
 <li>按住 Ctrl 键的同时，选择以 SwissAcademic 开头的所有文件。</li>
-<li>单击“打开”。<br><img src="/vx_images/02a61b4bf276da5e2df4a230b61e00dc_MD5.png"></li>
+<li>单击“打开”。<br><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/02a61b4bf276da5e2df4a230b61e00dc_MD5.png"></li>
 </ol>
-<h3 id="添加选定的其他引用"><a href="#添加选定的其他引用" class="headerlink" title="添加选定的其他引用"></a>添加选定的其他引用</h3><p>单击添加。<br><img src="/vx_images/a386c9791da6701740299e452275bbd6_MD5.png"></p>
+<h3 id="添加选定的其他引用"><a href="#添加选定的其他引用" class="headerlink" title="添加选定的其他引用"></a>添加选定的其他引用</h3><p>单击添加。<br><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/a386c9791da6701740299e452275bbd6_MD5.png"></p>
 <h3 id="添加对-System-Drawing-和-System-Windows-Forms-的引用"><a href="#添加对-System-Drawing-和-System-Windows-Forms-的引用" class="headerlink" title="添加对 System.Drawing 和 System.Windows.Forms 的引用"></a>添加对 System.Drawing 和 System.Windows.Forms 的引用</h3><ol>
 <li>单击系统<code>System.Drawing</code>。</li>
 <li>单击<code>System.Windows.Forms</code>。</li>
 <li>单击添加。</li>
 </ol>
-<p><img src="/vx_images/51830b7477e87ef9c04c254eb6f943a8_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/51830b7477e87ef9c04c254eb6f943a8_MD5.png"></p>
 <h3 id="关闭链接对话框"><a href="#关闭链接对话框" class="headerlink" title="关闭链接对话框"></a>关闭链接对话框</h3><ol>
-<li>关闭链接对话框。<br><img src="/vx_images/8e49eb268e6160ebf176e4ff139311cc_MD5.png"></li>
+<li>关闭链接对话框。<br><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/8e49eb268e6160ebf176e4ff139311cc_MD5.png"></li>
 </ol>
 <h3 id="将“复制本地”设置为“False”"><a href="#将“复制本地”设置为“False”" class="headerlink" title="将“复制本地”设置为“False”"></a>将“复制本地”设置为“False”</h3><ol>
 <li>选择 Citavi 和所有 SwissAcademic开头的引用。</li>
 <li>在属性资源管理器中，将复制本地属性设置为 false。</li>
 </ol>
-<p><img src="/vx_images/7cd2a9e5ab679f433aa914779794a7d4_MD5.png"></p>
-<h3 id="设置项目属性"><a href="#设置项目属性" class="headerlink" title="设置项目属性"></a>设置项目属性</h3><p>右键单击该项目并选择属性。<br><img src="/vx_images/ed21e4bd09f69755d0f602e9f79e0f06_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/7cd2a9e5ab679f433aa914779794a7d4_MD5.png"></p>
+<h3 id="设置项目属性"><a href="#设置项目属性" class="headerlink" title="设置项目属性"></a>设置项目属性</h3><p>右键单击该项目并选择属性。<br><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/ed21e4bd09f69755d0f602e9f79e0f06_MD5.png"></p>
 <h3 id="设置输出路径"><a href="#设置输出路径" class="headerlink" title="设置输出路径"></a>设置输出路径</h3><ol>
 <li>转到<code>Build</code>选项卡。</li>
-<li>单击输出路径文本框旁边的选择按钮。<br><img src="/vx_images/14b67ee822d31101ec68251cef1aa448_MD5.png"></li>
+<li>单击输出路径文本框旁边的选择按钮。<br><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/14b67ee822d31101ec68251cef1aa448_MD5.png"></li>
 </ol>
 <h3 id="选择插件文件夹"><a href="#选择插件文件夹" class="headerlink" title="选择插件文件夹"></a>选择插件文件夹</h3><ol>
 <li>转到您之前创建的 Citavi 3 Add-On Development 文件夹，然后转到 AddOns 文件夹。</li>
 <li>单击选择文件夹。</li>
 </ol>
-<p><img src="/vx_images/f128ca7592bd49413b9a42ea387323e4_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/f128ca7592bd49413b9a42ea387323e4_MD5.png"></p>
 <h3 id="指定外部调试程序"><a href="#指定外部调试程序" class="headerlink" title="指定外部调试程序"></a>指定外部调试程序</h3><ol>
 <li>切换到<code>Debug</code>卡。</li>
 <li>在启动操作区域中，选择启动外部程序（<strong>Externes Programm</strong>）。</li>
@@ -288,89 +288,89 @@
 </blockquote>
 </li>
 </ol>
-<p><img src="/vx_images/a5c531377145bcf4b8f864f8d354b797_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/a5c531377145bcf4b8f864f8d354b797_MD5.png"></p>
 <h3 id="选择-Citavi-exe-1"><a href="#选择-Citavi-exe-1" class="headerlink" title="选择 Citavi.exe"></a>选择 Citavi.exe</h3><ol>
 <li>转到之前创建的 Citavi 3 Add-On Development 文件夹。然后转到 bin 子文件夹。</li>
 <li>选择 Citavi.exe 文件。</li>
-<li>单击“打开”。<br><img src="/vx_images/631203feaf07c42d28882029476d28a6_MD5.png"></li>
+<li>单击“打开”。<br><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/631203feaf07c42d28882029476d28a6_MD5.png"></li>
 </ol>
 <h3 id="关闭项目属性"><a href="#关闭项目属性" class="headerlink" title="关闭项目属性"></a>关闭项目属性</h3><p>关闭项目属性选项卡。</p>
-<p><img src="/vx_images/989440553d0c9c36f1aa33a777f84e3b_MD5.png"></p>
-<h3 id="重命名Class1-cs"><a href="#重命名Class1-cs" class="headerlink" title="重命名Class1.cs"></a>重命名Class1.cs</h3><p>右键单击 Class1.cs 并从上下文菜单中选择重命名。<br><img src="/vx_images/6582edfd68f8328534c63ba5d8aed6fb_MD5.png"></p>
-<h3 id="输入名字"><a href="#输入名字" class="headerlink" title="输入名字"></a>输入名字</h3><p>在我们的示例 ShortTitleFilterDemo.cs 中，为文件命名有意义的名称。<br><img src="/vx_images/aca7f9d2cc06d3e7e92cc0c880f8b6e5_MD5.png"></p>
-<h4 id="重命名类"><a href="#重命名类" class="headerlink" title="重命名类"></a>重命名类</h4><p>如果 Visual Studio 尚未自动执行此操作：在代码中将类 Class1 重命名为 ShortTitleFilterDemo。注意前面是<code>public class</code><br><img src="/vx_images/d8419355b1f9972c0c9985437c809cfa_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/989440553d0c9c36f1aa33a777f84e3b_MD5.png"></p>
+<h3 id="重命名Class1-cs"><a href="#重命名Class1-cs" class="headerlink" title="重命名Class1.cs"></a>重命名Class1.cs</h3><p>右键单击 Class1.cs 并从上下文菜单中选择重命名。<br><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/6582edfd68f8328534c63ba5d8aed6fb_MD5.png"></p>
+<h3 id="输入名字"><a href="#输入名字" class="headerlink" title="输入名字"></a>输入名字</h3><p>在我们的示例 ShortTitleFilterDemo.cs 中，为文件命名有意义的名称。<br><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/aca7f9d2cc06d3e7e92cc0c880f8b6e5_MD5.png"></p>
+<h4 id="重命名类"><a href="#重命名类" class="headerlink" title="重命名类"></a>重命名类</h4><p>如果 Visual Studio 尚未自动执行此操作：在代码中将类 Class1 重命名为 ShortTitleFilterDemo。注意前面是<code>public class</code><br><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/d8419355b1f9972c0c9985437c809cfa_MD5.png"></p>
 <h1 id="教程2，进行初步尝试"><a href="#教程2，进行初步尝试" class="headerlink" title="教程2，进行初步尝试"></a>教程2，进行初步尝试</h1><h2 id="当创建Reference时自动根据Title创建ShortTitile"><a href="#当创建Reference时自动根据Title创建ShortTitile" class="headerlink" title="当创建Reference时自动根据Title创建ShortTitile"></a>当创建Reference时自动根据Title创建ShortTitile</h2><h3 id="使用语句并从-CitaviAddOn-类继承"><a href="#使用语句并从-CitaviAddOn-类继承" class="headerlink" title="使用语句并从 CitaviAddOn 类继承"></a>使用语句并从 CitaviAddOn 类继承</h3><ol>
 <li>为 SwissAcademic.Citavi 和 SwissAcademic.Citavi.Shell 添加 using 语句。</li>
 <li>ShortTitleFilterDemo  继承 CitaviAddOn 类。</li>
 </ol>
-<p><img src="/vx_images/3047a3d805f4eda98587a769e2b74970_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/3047a3d805f4eda98587a769e2b74970_MD5.png"></p>
 <h3 id="设置托管表单"><a href="#设置托管表单" class="headerlink" title="设置托管表单"></a>设置托管表单</h3><ol>
 <li>重写 HostingForm 属性并返回 AddOnHostingForm.MainForm 枚举值，如图所示。</li>
 </ol>
-<p><img src="/vx_images/cb11859a537e7c46b5d86aeb3316e97d_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/cb11859a537e7c46b5d86aeb3316e97d_MD5.png"></p>
 <figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">namespace</span> <span class="title">ShortTitleFilterDemoAddon</span> </span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ShortTitleFilterDemo</span></span><br><span class="line">        :</span><br><span class="line">        <span class="title">CitaviAddOn</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">override</span> AddOnHostingForm HostingForm</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">get</span> &#123; <span class="keyword">return</span> AddOnHostingForm.MainForm; &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="添加类"><a href="#添加类" class="headerlink" title="添加类"></a>添加类</h3><p>向项目添加类。</p>
-<p><img src="/vx_images/21ace99eb7d5b44ed57a00e2cd1ae3fa_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/21ace99eb7d5b44ed57a00e2cd1ae3fa_MD5.png"></p>
 <h3 id="命名和添加类"><a href="#命名和添加类" class="headerlink" title="命名和添加类"></a>命名和添加类</h3><ol>
 <li>将类命名为 Filter.cs。</li>
 <li>单击添加。</li>
 </ol>
-<p><img src="/vx_images/772795baef9794a37f32f8cb4a01ca42_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/772795baef9794a37f32f8cb4a01ca42_MD5.png"></p>
 <h3 id="using-语句，继承自-IReferenceStringPropertyFilter"><a href="#using-语句，继承自-IReferenceStringPropertyFilter" class="headerlink" title="using 语句，继承自 IReferenceStringPropertyFilter"></a>using 语句，继承自 IReferenceStringPropertyFilter</h3><ol>
 <li>为 SwissAcademic.Citavi 添加一个 using 语句。</li>
 <li>让 Filter 类实现 IReferenceStringPropertyFilter 接口。</li>
 </ol>
-<p><img src="/vx_images/233a89cddf4c4abc21b0f3b0dfc54dac_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/233a89cddf4c4abc21b0f3b0dfc54dac_MD5.png"></p>
 <h3 id="实现接口"><a href="#实现接口" class="headerlink" title="实现接口"></a>实现接口</h3><ol>
-<li>右键单击界面文本，然后从上下文菜单中选择”快速操作和重构” -&gt; “实现接口”。（VS2022）<br><img src="/vx_images/a935fe84d88f0352ae1157f6e375221d_MD5.jpeg"><br><img src="/vx_images/502f8530ce1ff59ecc006644f79a0930_MD5.jpeg"><br><img src="/vx_images/482a793f65a94597ab5046393a2a7bd1_MD5.jpeg"></li>
+<li>右键单击界面文本，然后从上下文菜单中选择”快速操作和重构” -&gt; “实现接口”。（VS2022）<br><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/a935fe84d88f0352ae1157f6e375221d_MD5.jpeg"><br><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/502f8530ce1ff59ecc006644f79a0930_MD5.jpeg"><br><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/482a793f65a94597ab5046393a2a7bd1_MD5.jpeg"></li>
 </ol>
 <h3 id="实现获取筛选器结果"><a href="#实现获取筛选器结果" class="headerlink" title="实现获取筛选器结果"></a>实现获取筛选器结果</h3><ol>
 <li>重写 GetFilterResult 方法主体，如图所示</li>
 </ol>
 <figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="built_in">string</span> <span class="title">GetFilterResult</span>(<span class="params">Reference reference, <span class="keyword">out</span> <span class="built_in">bool</span> handled</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">   handled = <span class="literal">true</span>;</span><br><span class="line">   <span class="keyword">return</span> <span class="string">&quot;Hello World (&quot;</span> + reference.Title.Substring(<span class="number">0</span>, Math.Min(<span class="number">15</span>, reference.Title.Length)) + <span class="string">&quot;...)&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src="/vx_images/6c4c5c1f955bad54d7119400cd045e6a_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/6c4c5c1f955bad54d7119400cd045e6a_MD5.png"></p>
 <h3 id="切换到-ShortTitleDemo-cs"><a href="#切换到-ShortTitleDemo-cs" class="headerlink" title="切换到 ShortTitleDemo.cs"></a>切换到 ShortTitleDemo.cs</h3><p>转到 ShortTitleFilterDemo 选项卡。</p>
-<p><img src="/vx_images/3ed92128c0cb8f5b73c1f95d70cb84f5_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/3ed92128c0cb8f5b73c1f95d70cb84f5_MD5.png"></p>
 <h3 id="覆盖-OnHostingFormLoaded"><a href="#覆盖-OnHostingFormLoaded" class="headerlink" title="覆盖 OnHostingFormLoaded"></a>覆盖 OnHostingFormLoaded</h3><p>重写 OnHostingFormLoaded 方法，如图所示</p>
 <figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">OnHostingFormLoaded</span>(<span class="params">System.Windows.Forms.Form hostingForm</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">   <span class="keyword">if</span> (Reference.ShortTitleFilter == <span class="literal">null</span>)</span><br><span class="line">   &#123;</span><br><span class="line">      Reference.ShortTitleFilter = <span class="keyword">new</span> Filter();</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">base</span>.OnHostingFormLoaded(hostingForm);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src="/vx_images/aa7222bd6f37206802c079e83860044b_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/aa7222bd6f37206802c079e83860044b_MD5.png"></p>
 <h3 id="开始调试"><a href="#开始调试" class="headerlink" title="开始调试"></a>开始调试</h3><p>按 F5 或单击“启动调试”。</p>
-<p><img src="/vx_images/911db216f0c5c5111ad6f67d6ce6ac50_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/911db216f0c5c5111ad6f67d6ce6ac50_MD5.png"></p>
 <h3 id="用户文件夹设置"><a href="#用户文件夹设置" class="headerlink" title="用户文件夹设置"></a>用户文件夹设置</h3><p>Citavi可以为每个程序安装管理单独的用户文件夹。从以前从未使用过的路径启动程序时，Citavi 会要求用户文件所需的文件夹。由于您在开始时使用程序文件夹的副本创建了一个新的“安装”，因此您必须指定一次要用于此目的的用户文件夹。</p>
 <ol>
 <li>单击“选择”。</li>
 </ol>
-<p><img src="/vx_images/e7b5424aacf143e44ecfea5cdf236cd4_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/e7b5424aacf143e44ecfea5cdf236cd4_MD5.png"></p>
 <h3 id="Citavi-选择用户文件文件夹"><a href="#Citavi-选择用户文件文件夹" class="headerlink" title="Citavi 选择用户文件文件夹"></a>Citavi 选择用户文件文件夹</h3><ol>
 <li>选择以前用于用户文件的文件夹（通常是“我的文档\Citavi 3”）。</li>
 <li>单击“确定”。</li>
 </ol>
-<p><img src="/vx_images/58095868f6660b21eaeaffc2fb810494_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/58095868f6660b21eaeaffc2fb810494_MD5.png"></p>
 <ol start="3">
 <li>单击“确定”。</li>
 </ol>
-<p><img src="/vx_images/21c7a1dfbe6a348ac9a18d28c0bce1e0_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/21c7a1dfbe6a348ac9a18d28c0bce1e0_MD5.png"></p>
 <h3 id="打开一个项目进行测试"><a href="#打开一个项目进行测试" class="headerlink" title="打开一个项目进行测试"></a>打开一个项目进行测试</h3><p>在Citavi中打开任何项目。</p>
-<p><img src="/vx_images/2868a16779fc701eb38b69bdbe4dfa39_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/2868a16779fc701eb38b69bdbe4dfa39_MD5.png"></p>
 <h3 id="创建新标题"><a href="#创建新标题" class="headerlink" title="创建新标题"></a>创建新标题</h3><ol>
 <li>创建新标题。</li>
 </ol>
-<p><img src="/vx_images/50a5bdb33c779f48b7a9d38be02d878d_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/50a5bdb33c779f48b7a9d38be02d878d_MD5.png"></p>
 <h3 id="选择任何文档类型"><a href="#选择任何文档类型" class="headerlink" title="选择任何文档类型"></a>选择任何文档类型</h3><ol>
 <li>选择任何文档类型，然后单击“确定”。</li>
 </ol>
-<p><img src="/vx_images/20cfa30f4b5efe3a3b07e8eb98665398_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/20cfa30f4b5efe3a3b07e8eb98665398_MD5.png"></p>
 <h3 id="输入标题，单击下一个字段并检查短标题的创建"><a href="#输入标题，单击下一个字段并检查短标题的创建" class="headerlink" title="输入标题，单击下一个字段并检查短标题的创建"></a>输入标题，单击下一个字段并检查短标题的创建</h3><ol>
 <li>在“Title”字段中，输入任何文本。</li>
 <li>点击”SubTitle”字段的空白框。</li>
 <li>检查”ShortTitle”是否根据您在加载项中编程的逻辑创建。</li>
 </ol>
-<p><img src="/vx_images/f51aa163303429352f83a4c4c4020e11_MD5.png"></p>
-<p>退出Citavi<br><img src="/vx_images/5096075de00b48d42fabcb2248ddb82c_MD5.png"></p>
-<h3 id="警告问题"><a href="#警告问题" class="headerlink" title="警告问题"></a>警告问题</h3><p>在VS2022中，调试时会出现一个警告：<br><img src="/vx_images/1d4afd1d65ef541a3a8b8ee107e70540_MD5.jpeg"><br>这个警告是关于引用的不同版本的”System.ValueTuple”之间存在冲突。具体来说，项目中使用了两个不同版本的”System.ValueTuple”：Version&#x3D;4.0.2.0和Version&#x3D;4.0.3.0。根据警告信息，选择了主版本号为4.0.2.0的”System.ValueTuple”作为引用。<br>解决方案：可以项目目录下，新建一个<code>.config</code>文件，配置以下设置：</p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/f51aa163303429352f83a4c4c4020e11_MD5.png"></p>
+<p>退出Citavi<br><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/5096075de00b48d42fabcb2248ddb82c_MD5.png"></p>
+<h3 id="警告问题"><a href="#警告问题" class="headerlink" title="警告问题"></a>警告问题</h3><p>在VS2022中，调试时会出现一个警告：<br><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/1d4afd1d65ef541a3a8b8ee107e70540_MD5.jpeg"><br>这个警告是关于引用的不同版本的”System.ValueTuple”之间存在冲突。具体来说，项目中使用了两个不同版本的”System.ValueTuple”：Version&#x3D;4.0.2.0和Version&#x3D;4.0.3.0。根据警告信息，选择了主版本号为4.0.2.0的”System.ValueTuple”作为引用。<br>解决方案：可以项目目录下，新建一个<code>.config</code>文件，配置以下设置：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">  &lt;runtime&gt;</span><br><span class="line">    &lt;assemblyBinding&gt;</span><br><span class="line">      &lt;dependentAssembly&gt;</span><br><span class="line">        &lt;assemblyIdentity name=&quot;YourAssemblyName&quot; publicKeyToken=&quot;YourPublicKeyToken&quot; culture=&quot;neutral&quot; /&gt;</span><br><span class="line">        &lt;bindingRedirect oldVersion=&quot;0.0.0.0-4.0.2.0&quot; newVersion=&quot;4.0.3.0&quot; /&gt;</span><br><span class="line">      &lt;/dependentAssembly&gt;</span><br><span class="line">      &lt;!-- 可以添加更多的 &lt;dependentAssembly&gt; 元素 --&gt;</span><br><span class="line">    &lt;/assemblyBinding&gt;</span><br><span class="line">  &lt;/runtime&gt;</span><br><span class="line">&lt;/configuration&gt;</span><br></pre></td></tr></table></figure>
 
 
@@ -379,45 +379,45 @@
 </ol>
 <figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">MainForm mainForm = (MainForm)hostingForm;</span><br><span class="line">mainForm.GetMainCommandbarManager().GetReferenceEditorCommandbar(MainFormReferenceEditorCommandbarId.Menu).GetCommandbarMenu(MainFormReferenceEditorCommandbarMenuId.Tools).AddCommandbarButton(<span class="string">&quot;GenerateShortTitle&quot;</span>, <span class="string">&quot;Re-build all short titles&quot;</span>);</span><br></pre></td></tr></table></figure>
 
-<p><img src="/vx_images/8a499e7f01ea1f9c0dc1ee0f28e386cd_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/8a499e7f01ea1f9c0dc1ee0f28e386cd_MD5.png"></p>
 <h3 id="覆盖之前执行命令"><a href="#覆盖之前执行命令" class="headerlink" title="覆盖之前执行命令"></a>覆盖之前执行命令</h3><ol>
 <li>重写 OnBeforePerformingCommand 方法，如图所示</li>
 </ol>
 <figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">OnBeforePerformingCommand</span>(<span class="params">SwissAcademic.Controls.BeforePerformingCommandEventArgs e</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">switch</span> (e.Key)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">case</span> <span class="string">&quot;GenerateShortTitle&quot;</span>:</span><br><span class="line">			&#123;</span><br><span class="line">				e.Handled = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">				<span class="keyword">var</span> filter = <span class="keyword">new</span> Filter();</span><br><span class="line">				<span class="built_in">bool</span> handled;</span><br><span class="line">				List&lt;Reference&gt; references = Program.ActiveProjectShell.PrimaryMainForm.GetSelectedReferences();</span><br><span class="line">				<span class="keyword">foreach</span> (Reference reference <span class="keyword">in</span> references)</span><br><span class="line">				&#123;</span><br><span class="line">					reference.ShortTitle = filter.GetFilterResult(reference, <span class="keyword">out</span> handled);</span><br><span class="line">					reference.ShortTitleUpdateType = UpdateType.Manual;</span><br><span class="line">				&#125;</span><br><span class="line"></span><br><span class="line">				System.Windows.Forms.MessageBox.Show(<span class="string">&quot;Finished&quot;</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">base</span>.OnBeforePerformingCommand(e);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src="/vx_images/830af4bea8eb99a43ce2fced2aaa62ad_MD5.jpeg"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/830af4bea8eb99a43ce2fced2aaa62ad_MD5.jpeg"></p>
 <h3 id="开始调试并打开项目"><a href="#开始调试并打开项目" class="headerlink" title="开始调试并打开项目"></a>开始调试并打开项目</h3><p>按 F5 或单击“启动调试”。</p>
-<p><img src="/vx_images/75dde7d59985476cf1f79e7cfc472c58_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/75dde7d59985476cf1f79e7cfc472c58_MD5.png"></p>
 <h3 id="在“工具”菜单中调用新命令"><a href="#在“工具”菜单中调用新命令" class="headerlink" title="在“工具”菜单中调用新命令"></a>在“工具”菜单中调用新命令</h3><ol>
 <li>在“工具”菜单中，检查所需的条目“为所有引用生成新的短标题”是否存在。单击此命令。</li>
 </ol>
-<p><img src="/vx_images/0c3a72a0573fa18a9356f0234deb162f_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/0c3a72a0573fa18a9356f0234deb162f_MD5.png"></p>
 <h3 id="所有现有的短标题都已使用我们的过滤器重新创建"><a href="#所有现有的短标题都已使用我们的过滤器重新创建" class="headerlink" title="所有现有的短标题都已使用我们的过滤器重新创建"></a>所有现有的短标题都已使用我们的过滤器重新创建</h3><p>检查是否已根据已编程的逻辑为所有现有标题创建新的短标题。</p>
-<p><img src="/vx_images/a206235b759e901beb81d9f324fd857c_MD5.png"></p>
-<h3 id="退出奇塔维。"><a href="#退出奇塔维。" class="headerlink" title="退出奇塔维。"></a>退出奇塔维。</h3><p><img src="/vx_images/5096075de00b48d42fabcb2248ddb82c_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/a206235b759e901beb81d9f324fd857c_MD5.png"></p>
+<h3 id="退出奇塔维。"><a href="#退出奇塔维。" class="headerlink" title="退出奇塔维。"></a>退出奇塔维。</h3><p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/5096075de00b48d42fabcb2248ddb82c_MD5.png"></p>
 <h2 id="第3个示例，在PersonList窗口里添加按钮"><a href="#第3个示例，在PersonList窗口里添加按钮" class="headerlink" title="第3个示例，在PersonList窗口里添加按钮"></a>第3个示例，在PersonList窗口里添加按钮</h2><p>在List -&gt; Persons and Organizations二级窗口界面添加按钮（并添加图标），选中人名，点击按钮，然后即可在主窗口里选中相关的References。</p>
 <ol>
-<li>添加新类。<br><img src="/vx_images/734efc56d6d1589b90426b0ef476ddfc_MD5.png"></li>
+<li>添加新类。<br><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/734efc56d6d1589b90426b0ef476ddfc_MD5.png"></li>
 </ol>
 <h3 id="命名类"><a href="#命名类" class="headerlink" title="命名类"></a>命名类</h3><ol>
 <li>将此类命名为 PersonListApplyRelatedRefererncesAsSelection.cs。</li>
 <li>单击添加。</li>
 </ol>
-<p><img src="/vx_images/162f2f635f129c4da9119f76acdef9b9_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/162f2f635f129c4da9119f76acdef9b9_MD5.png"></p>
 <h3 id="插入代码"><a href="#插入代码" class="headerlink" title="插入代码"></a>插入代码</h3><p>添加图像中可见的代码</p>
 <figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">override</span> AddOnHostingForm HostingForm</span><br><span class="line">&#123;</span><br><span class="line">   <span class="keyword">get</span> &#123; <span class="keyword">return</span> AddOnHostingForm.PersonList; &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">OnHostingFormLoaded</span>(<span class="params">System.Windows.Forms.Form hostingForm</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">   <span class="keyword">var</span> personList = (PersonList)hostingForm;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">var</span> menuEntry = personList.GetCommandbar(PersonListCommandbarId.Menu).GetCommandbarMenu(PersonListCommandbarMenuId.Persons).AddCommandbarButton(<span class="string">&quot;ApplyRelatedReferencesAsSelection&quot;</span>, <span class="string">&quot;Apply related references as selection&quot;</span>);</span><br><span class="line">   menuEntry.HasSeparator = <span class="literal">true</span>;</span><br><span class="line">   menuEntry.Image = SwissAcademic.Citavi.Shell.Properties.Resources.Filter;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">base</span>.OnHostingFormLoaded(hostingForm);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">OnBeforePerformingCommand</span>(<span class="params">SwissAcademic.Controls.BeforePerformingCommandEventArgs e</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">   <span class="keyword">switch</span> (e.Key)</span><br><span class="line">   &#123;</span><br><span class="line">      <span class="keyword">case</span> <span class="string">&quot;ApplyRelatedReferencesAsSelection&quot;</span>:</span><br><span class="line">         &#123;</span><br><span class="line">            e.Handled = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">var</span> personList = (PersonList)e.Form;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">var</span> references = <span class="keyword">new</span> List&lt;Reference&gt;();</span><br><span class="line"></span><br><span class="line">            <span class="keyword">foreach</span> (<span class="keyword">var</span> person <span class="keyword">in</span> personList.GetSelectedPersons())</span><br><span class="line">            &#123;</span><br><span class="line">               <span class="keyword">foreach</span> (<span class="keyword">var</span> reference <span class="keyword">in</span> person.References)</span><br><span class="line">               &#123;</span><br><span class="line">                  <span class="keyword">if</span> (!references.Contains(reference))</span><br><span class="line">                  &#123;</span><br><span class="line">                     references.Add(reference);</span><br><span class="line">                  &#125;</span><br><span class="line">               &#125;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">var</span> mainForm = personList.ProjectShell.PrimaryMainForm;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">var</span> referenceFilter = <span class="keyword">new</span> ReferenceFilter(references, <span class="string">&quot;List of persons&quot;</span>);</span><br><span class="line">            <span class="keyword">var</span> filters = <span class="keyword">new</span> List&lt;ReferenceFilter&gt; &#123; referenceFilter &#125;;</span><br><span class="line"></span><br><span class="line">            mainForm.ReferenceEditorFilterSet.Filters.ReplaceBy(filters);</span><br><span class="line"></span><br><span class="line">            Program.ActivateForm(mainForm);</span><br><span class="line">         &#125;</span><br><span class="line">         <span class="keyword">break</span>;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">base</span>.OnBeforePerformingCommand(e);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src="/vx_images/b895da3280851d09289a31525c6ce2ce_MD5.png"></p>
+<p><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/b895da3280851d09289a31525c6ce2ce_MD5.png"></p>
 <h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><ol>
 <li>启动Citavi。</li>
 <li>开放名单&gt;人员和机构。</li>
-<li>验证“人员”菜单中是否存在“将相关引用作为选择应用”命令，以及该命令是否正常工作。<br><img src="/vx_images/f3c85b3492e7305a0f5396543fd6ec5d_MD5.png"></li>
+<li>验证“人员”菜单中是否存在“将相关引用作为选择应用”命令，以及该命令是否正常工作。<br><img src="/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/f3c85b3492e7305a0f5396543fd6ec5d_MD5.png"></li>
 </ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xh542428798.github.io/images/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/" data-id="clo8oijb30000x4yu2een3vhi" data-title="CitaviAddons开发初步教程" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://xh542428798.github.io/images/CitaviAddons%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5%E6%95%99%E7%A8%8B/" data-id="clo8od5t8000014yucszld2k4" data-title="CitaviAddons开发初步教程" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
